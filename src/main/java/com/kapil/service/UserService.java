@@ -14,5 +14,5 @@ public interface UserService {
     UserRecord getUser(Long userId);
 
     @Recover
-    String getUserFailureMessage();
+    String getUserFailureMessage(UserFetchException userFetchException);
 }
