@@ -31,6 +31,17 @@
         </dependency>
 
         <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+        </dependency>
+
+        <!-- Test dependencies -->
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -49,10 +60,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!--
-         ArchUnit dependency
-         https://mvnrepository.com/artifact/com.tngtech.archunit/archunit-junit5
-        -->
+        <!-- ArchUnit dependency -->
         <dependency>
             <groupId>com.tngtech.archunit</groupId>
             <artifactId>archunit-junit5</artifactId>
