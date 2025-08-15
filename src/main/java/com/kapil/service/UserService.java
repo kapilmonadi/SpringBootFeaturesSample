@@ -10,7 +10,7 @@ public interface UserService {
 
     @Retryable(retryFor = {UserFetchException.class},
     maxAttempts = 3,
-    backoff = @Backoff(delay = 2000))
+    backoff = @Backoff(delay = 1000))
     UserRecord getUser(Long userId);
 
     @Recover
