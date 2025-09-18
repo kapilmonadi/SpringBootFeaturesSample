@@ -12,3 +12,7 @@ management:
       group:
         custom:
           include: diskSpace,ping
+springdoc:
+  api-docs:
+    path: /api-docs
+
